@@ -133,15 +133,15 @@ func main() {
 		positionMovement, waypoint = moveWaypoint(actionCode, waypoint, length)
 		position[1][0] += positionMovement[0]
 		position[1][1] += positionMovement[1]
-		fmt.Printf(
-			"%c[%.0f]; Position = [%.0f, %.0f]; Waypoint = [%.0f, %.0f]\n",
-			actionCode,
-			length,
-			position[1][0],
-			position[1][1],
-			waypoint[0],
-			waypoint[1],
-		)
+		// fmt.Printf(
+		// 	"%c[%.0f]; Position = [%.0f, %.0f]; Waypoint = [%.0f, %.0f]\n",
+		// 	actionCode,
+		// 	length,
+		// 	position[1][0],
+		// 	position[1][1],
+		// 	waypoint[0],
+		// 	waypoint[1],
+		// )
 	}
 
 	fmt.Printf("Total distance is %.0f (part 1)\n", math.Abs(position[0][0])+math.Abs(position[0][1]))
